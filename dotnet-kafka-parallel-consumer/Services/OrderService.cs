@@ -12,7 +12,7 @@ namespace KafkaParallelConsumer.Services
     {
         public async Task<int> SaveOrderData(OrderRequest orderRequest)
         {
-            var cs = "User ID=abbadmin;Password=Relcare123#;Host=devupgrade.postgres.database.azure.com;Port=5432;Database=abbrc;Pooling=true;Ssl Mode=Require;Trust Server Certificate = true;";
+            var cs = "";
             
             using var con = new NpgsqlConnection(cs);
             con.Open();
